@@ -18,12 +18,78 @@ def driver_function():
     log(("Competition", "competition"), "driver_end")
 
 
+def autonomous_function_absolute():
+    """Function for the autonomous part of a competition match"""
+
+    log(("Competition", "competition"), "autonomous_begin")
+
+    # Reset odometry to the starting autonomous position
+    odometry.reset(PositionWithHeading(1200, 1200, 0))
+
+    # Then try resetting it to GPS if GPS sensor is installed and reports high quality
+    reset_odometry_to_gps()
+
+    pid_mover.move(Position(1200, -1200), FRAME_ABSOLUTE)
+
+    reset_odometry_to_gps()
+
+    pid_mover.move(Position(-1200, -1200), FRAME_ABSOLUTE)
+
+    reset_odometry_to_gps()
+
+    pid_mover.move(Position(-1200, 1200), FRAME_ABSOLUTE)
+
+    reset_odometry_to_gps()
+
+    pid_mover.move(Position(1200, 1200), FRAME_ABSOLUTE)
+
+    reset_odometry_to_gps()
+
+    log(("Competition", "competition"), "autonomous_end")
+
+
 def autonomous_function():
     """Function for the autonomous part of a competition match"""
 
     log(("Competition", "competition"), "autonomous_begin")
 
-    # Add autonomous logic here
+    # Reset odometry to the starting autonomous position
+    odometry.reset(PositionWithHeading(1200, 1200, 180))
+
+    # Then try resetting it to GPS if GPS sensor is installed and reports high quality
+    reset_odometry_to_gps()
+
+    pid_aimer.aim(Position(1200, -1200), FRAME_ABSOLUTE)
+
+    reset_odometry_to_gps()
+
+    pid_driver.drive(2400)
+
+    reset_odometry_to_gps()
+
+    pid_aimer.aim(Position(-1200, -1200), FRAME_ABSOLUTE)
+
+    reset_odometry_to_gps()
+
+    pid_driver.drive(2400)
+
+    reset_odometry_to_gps()
+
+    pid_aimer.aim(Position(-1200, 1200), FRAME_ABSOLUTE)
+
+    reset_odometry_to_gps()
+
+    pid_driver.drive(2400)
+
+    reset_odometry_to_gps()
+
+    pid_aimer.aim(Position(1200, 1200), FRAME_ABSOLUTE)
+
+    reset_odometry_to_gps()
+
+    pid_driver.drive(1800)
+
+    reset_odometry_to_gps()
 
     log(("Competition", "competition"), "autonomous_end")
 
