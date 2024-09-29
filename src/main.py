@@ -59,35 +59,33 @@ def autonomous_function():
     # Then try resetting it to GPS if GPS sensor is installed and reports high quality
     reset_odometry_to_gps()
 
-    pid_aimer.aim(Position(1200, -1200), FRAME_ABSOLUTE)
-
-    reset_odometry_to_gps()
-
     pid_mover.move(Position(1200, -1200), FRAME_ABSOLUTE)
 
-    reset_odometry_to_gps()
-
-    pid_aimer.aim(Position(-1200, -1200), FRAME_ABSOLUTE)
+    sleep(1000, TimeUnits.MSEC)
 
     reset_odometry_to_gps()
 
     pid_mover.move(Position(-1200, -1200), FRAME_ABSOLUTE)
 
-    reset_odometry_to_gps()
-
-    pid_aimer.aim(Position(-1200, 1200), FRAME_ABSOLUTE)
+    sleep(1000, TimeUnits.MSEC)
 
     reset_odometry_to_gps()
 
     pid_mover.move(Position(-1200, 1200), FRAME_ABSOLUTE)
 
-    reset_odometry_to_gps()
-
-    pid_aimer.aim(Position(1200, 1200), FRAME_ABSOLUTE)
+    sleep(1000, TimeUnits.MSEC)
 
     reset_odometry_to_gps()
 
     pid_mover.move(Position(1200, 1200), FRAME_ABSOLUTE)
+
+    sleep(1000, TimeUnits.MSEC)
+
+    reset_odometry_to_gps()
+
+    pid_aimer.aim(Position(1200, -1200), FRAME_ABSOLUTE)
+
+    sleep(1000, TimeUnits.MSEC)
 
     reset_odometry_to_gps()
 
