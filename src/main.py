@@ -63,7 +63,7 @@ def autonomous_function():
 
     reset_odometry_to_gps()
 
-    pid_driver.drive(2400)
+    pid_mover.move(Position(1200, -1200), FRAME_ABSOLUTE)
 
     reset_odometry_to_gps()
 
@@ -71,7 +71,7 @@ def autonomous_function():
 
     reset_odometry_to_gps()
 
-    pid_driver.drive(2400)
+    pid_mover.move(Position(-1200, -1200), FRAME_ABSOLUTE)
 
     reset_odometry_to_gps()
 
@@ -79,7 +79,7 @@ def autonomous_function():
 
     reset_odometry_to_gps()
 
-    pid_driver.drive(2400)
+    pid_mover.move(Position(-1200, 1200), FRAME_ABSOLUTE)
 
     reset_odometry_to_gps()
 
@@ -87,7 +87,7 @@ def autonomous_function():
 
     reset_odometry_to_gps()
 
-    pid_driver.drive(1800)
+    pid_mover.move(Position(1200, 1200), FRAME_ABSOLUTE)
 
     reset_odometry_to_gps()
 
