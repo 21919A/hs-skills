@@ -45,14 +45,13 @@ def autonomous_function():
 
     wait(1000, MSEC)
 
-    pid_driver.drive(325, True)
+    pid_mover.move(Position(-1200, 0), FRAME_ABSOLUTE, FORWARD)
 
     wait(500, MSEC)
     reset_odometry_to_gps()
-    pid_turner.turn(180, FRAME_ABSOLUTE)
-    
-    wait(500, MSEC)
-    pid_driver.drive(-600, True)
+
+    pid_mover.move(Position(-1200, 600), FRAME_ABSOLUTE, REVERSE, True)
+
     clamp.set(True)
 
     wait(500, MSEC)
@@ -66,6 +65,30 @@ def autonomous_function():
     pid_turner.turn(0, FRAME_ABSOLUTE)
 
     pid_driver.drive(600)
+
+    wait(500, MSEC)
+    reset_odometry_to_gps()
+    pid_turner.turn(270, FRAME_ABSOLUTE)
+
+    pid_driver.drive(900)
+
+    wait(500, MSEC)
+    reset_odometry_to_gps()
+    pid_turner.turn(120, FRAME_HEADING_RELATIVE)
+
+    pid_driver.drive(300)
+    pid_driver.drive(-50)
+
+    wait(500, MSEC)
+    reset_odometry_to_gps()
+    pid_turner.turn(90, FRAME_HEADING_RELATIVE)
+
+    pid_driver.drive(-150)
+
+    clamp.set(False)
+    wait(100, MSEC)
+    pid_driver.drive(400)
+
     
 
     # pid_mover.move(Position(1200, -1200), FRAME_ABSOLUTE)
