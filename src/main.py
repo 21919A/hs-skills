@@ -40,59 +40,63 @@ def autonomous_function():
     intake_1st_stage.set_velocity(450, RPM)
     intake_2nd_stage.set_velocity(450, RPM)
 
-    # intake_1st_stage.spin(REVERSE)
-    # intake_2nd_stage.spin(FORWARD)
 
-    # wait(1000, MSEC)
 
-    pid_mover.move(Position(-1200, 600), FRAME_ABSOLUTE, REVERSE, True)
+    wait(100, MSEC)
 
-    wait(500, MSEC)
+    # wait(500, MSEC)
     reset_odometry_to_gps()
 
-    # pid_mover.move(Position(-1200, 600), FRAME_ABSOLUTE, REVERSE, True)
+    pid_mover.move(Position(-1200, 600), FRAME_ABSOLUTE, REVERSE, True)
 
     clamp.set(True)
 
     intake_1st_stage.spin(REVERSE)
     intake_2nd_stage.spin(FORWARD)
 
-    wait(500, MSEC)
-    reset_odometry_to_gps()
+  
     pid_turner.turn(90, FRAME_ABSOLUTE)
 
     pid_driver.drive(600)
     
-    wait(500, MSEC)
+    wait(250, MSEC)
     reset_odometry_to_gps()
     pid_turner.turn(0, FRAME_ABSOLUTE)
 
     pid_driver.drive(600)
 
-    wait(500, MSEC)
+    wait(250, MSEC)
     reset_odometry_to_gps()
     pid_turner.turn(270, FRAME_ABSOLUTE)
 
     pid_driver.drive(900)
 
-    wait(500, MSEC)
+    wait(250, MSEC)
     reset_odometry_to_gps()
     pid_turner.turn(120, FRAME_HEADING_RELATIVE)
 
     pid_driver.drive(300)
     pid_driver.drive(-50)
 
-    wait(500, MSEC)
+    wait(250, MSEC)
     reset_odometry_to_gps()
     pid_turner.turn(90, FRAME_HEADING_RELATIVE)
 
-    pid_driver.drive(-150)
+    pid_driver.drive(-175)
 
     clamp.set(False)
+    intake_2nd_stage.spin(REVERSE)
     wait(100, MSEC)
-    pid_driver.drive(400)
-
-    
+    pid_driver.drive(350)
+    pid_turner.turn(353, FRAME_ABSOLUTE)
+    intake_2nd_stage.spin(FORWARD)
+    pid_driver.drive(-1950, True)
+    clamp.set(True)
+    pid_turner.turn(90, FRAME_HEADING_RELATIVE)
+    reset_odometry_to_gps()
+    pid_driver.drive(600)
+    pid_turner.turn(90, FRAME_HEADING_RELATIVE)
+    pid_driver.drive(600)
 
     # pid_mover.move(Position(1200, -1200), FRAME_ABSOLUTE)
 
