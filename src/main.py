@@ -86,17 +86,39 @@ def autonomous_function():
 
     clamp.set(False)
     intake_2nd_stage.spin(REVERSE)
+
     wait(100, MSEC)
     pid_driver.drive(350)
     pid_turner.turn(353, FRAME_ABSOLUTE)
     intake_2nd_stage.spin(FORWARD)
     pid_driver.drive(-1950, True)
+
     clamp.set(True)
     pid_turner.turn(90, FRAME_HEADING_RELATIVE)
+
     reset_odometry_to_gps()
     pid_driver.drive(600)
     pid_turner.turn(90, FRAME_HEADING_RELATIVE)
-    pid_driver.drive(600)
+
+    pid_driver.drive(500)
+    reset_odometry_to_gps()
+    pid_turner.turn(90, FRAME_HEADING_RELATIVE)
+
+    pid_driver.drive(800)
+    pid_turner.turn(-120, FRAME_HEADING_RELATIVE)
+
+    pid_driver.drive(300)
+    pid_driver.drive(-50)
+    wait(250, MSEC)
+    reset_odometry_to_gps()
+    pid_turner.turn(-90, FRAME_HEADING_RELATIVE)
+    
+    pid_driver.drive(-175)
+    intake_2nd_stage.spin(REVERSE)
+    clamp.set(False)
+    pid_driver.drive(200)
+
+
 
     # pid_mover.move(Position(1200, -1200), FRAME_ABSOLUTE)
 
