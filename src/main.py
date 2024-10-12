@@ -108,7 +108,7 @@ def autonomous_function():
     reset_odometry_to_gps()
     pid_turner.turn(-90, FRAME_HEADING_RELATIVE)
 
-    pid_driver.drive(-220)
+    pid_driver.drive(-225)
     intake_2nd_stage.spin(REVERSE)
     clamp.set(False)
     pid_driver.drive(200)
