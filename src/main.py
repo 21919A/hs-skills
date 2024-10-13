@@ -31,6 +31,8 @@ def autonomous_function():
 
     # Reset odometry to the starting autonomous position
     odometry.reset(PositionWithHeading(-1500, 600, 270))
+    # odometry.reset(PositionWithHeading(-1200, 1200, 0))
+
 
     # # Then try resetting it to GPS if GPS sensor is installed and reports high quality
     reset_odometry_to_gps()
@@ -83,32 +85,34 @@ def autonomous_function():
     intake_2nd_stage.spin(REVERSE)
 
     wait(100, MSEC)
-    pid_driver.drive(350)
-    pid_turner.turn(353, FRAME_ABSOLUTE)
+    pid_driver.drive(370)
+    reset_odometry_to_gps()
+    wait(250, MSEC)
+    pid_turner.turn(357, FRAME_ABSOLUTE)
     intake_2nd_stage.spin(FORWARD)
-    pid_driver.drive(-1950, True)
+    pid_driver.drive(-2000, True)
 
     clamp.set(True)
-    pid_turner.turn(90, FRAME_HEADING_RELATIVE)
+    pid_turner.turn(83, FRAME_HEADING_RELATIVE)
 
     reset_odometry_to_gps()
-    pid_driver.drive(600)
-    pid_turner.turn(90, FRAME_HEADING_RELATIVE)
+    pid_driver.drive(630)
+    pid_turner.turn(97, FRAME_HEADING_RELATIVE)
 
-    pid_driver.drive(500)
+    pid_driver.drive(475)
     reset_odometry_to_gps()
-    pid_turner.turn(90, FRAME_HEADING_RELATIVE)
+    pid_turner.turn(270, FRAME_ABSOLUTE)
 
     pid_driver.drive(800)
     pid_turner.turn(-120, FRAME_HEADING_RELATIVE)
 
-    pid_driver.drive(300)
+    pid_driver.drive(305)
     pid_driver.drive(-50)
     wait(250, MSEC)
     reset_odometry_to_gps()
     pid_turner.turn(-90, FRAME_HEADING_RELATIVE)
 
-    pid_driver.drive(-225)
+    pid_driver.drive(-260)
     intake_2nd_stage.spin(REVERSE)
     clamp.set(False)
     pid_driver.drive(200)
