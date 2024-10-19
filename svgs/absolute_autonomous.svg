@@ -108,5 +108,13 @@
 <polyline points="-1500,600 -1200,600 -600,600 -600,1200 -1500,1200 -1350,1460 -1375,1417 -1527,1504 -1206,1319 -1200,-600 -570,-600 -570,-1075 -1370,-1075 -1218,-1339 -1242,-1296 -1468,-1426 -1294,-1326" fill="none" stroke="#55ff55" stroke-width="51" stroke-dasharray="51,102" stroke-dashoffset="102" stroke-linejoin="round"/>
 <polyline points="-1500,600 -1200,600 -600,600 -600,1200 -1500,1200 -1350,1460 -1375,1417 -1527,1504 -1206,1319 -1200,-600 -570,-600 -570,-1075 -1370,-1075 -1218,-1339 -1242,-1296 -1468,-1426 -1294,-1326" fill="none" stroke="#ffffff" stroke-width="51" stroke-dasharray="51,102" stroke-dashoffset="51" stroke-linejoin="round"/>
 <path d="M -1500,600 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
+<path d="M -600,600 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
+<path d="M -600,1200 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
+<path d="M -1500,1200 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
+<path d="M -1375,1417 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
+<path d="M -1206,1319 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
+<path d="M -1200,-600 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
+<path d="M -570,-1075 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
+<path d="M -1242,-1296 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
 </g>
 </svg>
