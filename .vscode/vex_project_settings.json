@@ -1,16 +1,16 @@
 {
 	"extension": {
-		"version": "0.6.0",
+		"version": "0.6.1",
 		"json": 2
 	},
 	"project": {
 		"name": "hs-skills",
 		"description": "Autonomous Skill",
-		"creationDate": "9/27/2024, 6:00:00 PM",
+		"creationDate": "Thu, 28 Nov 2024 20:20:41 GMT",
 		"platform": "V5",
 		"language": "python",
 		"slot": 4,
-		"sdkVersion": "V5_1_0_1_19",
+		"sdkVersion": "V5_1_0_1_25",
 		"python": {
 			"main": "build/preprocessed.py"
 		}
