@@ -94,8 +94,48 @@ def autonomous_function():
     trigger_driver.drive(-300)
     clamp.set(False) 
 
-    
+    trigger_driver.drive(300)
+    reset_robot_position_and_heading_to_gps()
+    trigger_turner.turn(90, FRAME_ABSOLUTE)
 
+    intake_1st_stage.stop()
+    intake_2nd_stage.stop()
+    trigger_driver.drive(2000)
+
+    intake_1st_stage.spin(REVERSE)
+    wait(100, MSEC)
+    intake_1st_stage.stop()
+
+    reset_robot_position_and_heading_to_gps()
+    trigger_turner.turn(115, FRAME_HEADING_RELATIVE)
+    trigger_driver.drive(-1200)
+    clamp.set(True)
+
+    intake_1st_stage.spin(REVERSE)
+    intake_2nd_stage.spin(FORWARD)
+
+    reset_robot_position_and_heading_to_gps()
+    trigger_turner.turn(20, FRAME_HEADING_RELATIVE)
+    trigger_driver.drive(700)
+
+    reset_robot_position_and_heading_to_gps()
+    trigger_turner.turn(90, FRAME_HEADING_RELATIVE)
+    trigger_driver.drive(900)
+    trigger_turner.turn(92, FRAME_HEADING_RELATIVE)
+    trigger_driver.drive(900)
+    
+    reset_robot_position_and_heading_to_gps()
+    trigger_turner.turn(0, FRAME_ABSOLUTE)
+    trigger_driver.drive(600)
+
+    reset_robot_position_and_heading_to_gps()
+    trigger_turner.turn(-110, FRAME_HEADING_RELATIVE)
+    trigger_driver.drive(-800)
+    clamp.set(False)
+
+    reset_robot_position_and_heading_to_gps()
+    trigger_turner.turn(-75, FRAME_HEADING_RELATIVE)
+    trigger_driver.drive(3000)
 
     # # Then try resetting to GPS if GPS sensor is installed and reports high quality
     # reset_robot_position_and_heading_to_gps()
