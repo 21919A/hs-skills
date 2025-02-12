@@ -38,11 +38,13 @@ def autonomous_function():
     reset_robot_position_and_heading_to_gps()
     intake_1st_stage.set_velocity(600, RPM)
     intake_2nd_stage.set_velocity(600, RPM)
+    drive_motor_group.set_velocity(600, RPM)
 
-    intake_1st_stage.spin(REVERSE)
-    intake_2nd_stage.spin(FORWARD)
+    intake_1st_stage.spin(FORWARD)
+    intake_2nd_stage.spin(REVERSE)
 
-    trigger_driver.drive(450)
+
+    trigger_driver.drive(100)
     trigger_turner.turn(90, FRAME_HEADING_RELATIVE)
     trigger_driver.drive(-600)
     clamp.set(True)
@@ -134,7 +136,7 @@ def autonomous_function():
     clamp.set(False)
 
     reset_robot_position_and_heading_to_gps()
-    trigger_turner.turn(-75, FRAME_HEADING_RELATIVE)
+    trigger_turner.turn(-73, FRAME_HEADING_RELATIVE)
     trigger_driver.drive(3000)
 
     # # Then try resetting to GPS if GPS sensor is installed and reports high quality
