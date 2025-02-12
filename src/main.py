@@ -43,8 +43,10 @@ def autonomous_function():
     intake_1st_stage.spin(FORWARD)
     intake_2nd_stage.spin(REVERSE)
 
+    wait(1000, MSEC)
 
-    trigger_driver.drive(100)
+
+    trigger_driver.drive(180)
     trigger_turner.turn(90, FRAME_HEADING_RELATIVE)
     trigger_driver.drive(-600)
     clamp.set(True)
