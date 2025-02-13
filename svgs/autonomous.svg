@@ -102,12 +102,24 @@
 <path d="M -89,-1500 a 89 89 0 0 0 178 0 a 89 89 0 0 0 -178 0 z m 51 0 a 38 38 0 0 0 76 0 a 38 38 0 0 0 -76 0 z" fill="#cc5555" stroke="#000000" stroke-width="3" fill-rule="evenodd"/>
 <path d="M 1411,600 a 89 89 0 0 0 178 0 a 89 89 0 0 0 -178 0 z m 51 0 a 38 38 0 0 0 76 0 a 38 38 0 0 0 -76 0 z" fill="#5555cc" stroke="#000000" stroke-width="3" fill-rule="evenodd"/>
 <path d="M 1411,-600 a 89 89 0 0 0 178 0 a 89 89 0 0 0 -178 0 z m 51 0 a 38 38 0 0 0 76 0 a 38 38 0 0 0 -76 0 z" fill="#5555cc" stroke="#000000" stroke-width="3" fill-rule="evenodd"/>
-<polyline points="-1647,3 -1227,3 -1227,603 -627,603" fill="none" stroke="#ffffff" stroke-width="51" stroke-linejoin="round"/>
-<polyline points="-1653,-3 -1233,-3 -1233,597 -633,597" fill="none" stroke="#ffffff" stroke-width="51" stroke-linejoin="round"/>
-<polyline points="-1650,0 -1230,0 -1230,600 -630,600" fill="none" stroke="#000000" stroke-width="51" stroke-dasharray="51,102" stroke-linejoin="round"/>
-<polyline points="-1650,0 -1230,0 -1230,600 -630,600" fill="none" stroke="#55ff55" stroke-width="51" stroke-dasharray="51,102" stroke-dashoffset="102" stroke-linejoin="round"/>
-<polyline points="-1650,0 -1230,0 -1230,600 -630,600" fill="none" stroke="#ffffff" stroke-width="51" stroke-dasharray="51,102" stroke-dashoffset="51" stroke-linejoin="round"/>
+<polyline points="-1647,3 -1227,3 -1227,603 -607,603 -607,1203 -1241,1499 -607,1203 -1407,1203 -1534,1475 -1204,768 -1204,-602 -604,-602 -604,-1202 -1239,-1498 -604,-1202 -1404,-1202 -1531,-1474 -1404,-1202 596,-1202 1103,-114 608,-609 -28,27 630,641 619,1241 1366,1527 1576,-1465" fill="none" stroke="#ffffff" stroke-width="51" stroke-linejoin="round"/>
+<polyline points="-1653,-3 -1233,-3 -1233,597 -613,597 -613,1197 -1247,1493 -613,1197 -1413,1197 -1540,1469 -1210,762 -1210,-608 -610,-608 -610,-1208 -1245,-1504 -610,-1208 -1410,-1208 -1537,-1480 -1410,-1208 590,-1208 1097,-120 602,-615 -34,21 624,635 613,1235 1360,1521 1570,-1471" fill="none" stroke="#ffffff" stroke-width="51" stroke-linejoin="round"/>
+<polyline points="-1650,0 -1230,0 -1230,600 -610,600 -610,1200 -1244,1496 -610,1200 -1410,1200 -1537,1472 -1207,765 -1207,-605 -607,-605 -607,-1205 -1242,-1501 -607,-1205 -1407,-1205 -1534,-1477 -1407,-1205 593,-1205 1100,-117 605,-612 -31,24 627,638 616,1238 1363,1524 1573,-1468" fill="none" stroke="#000000" stroke-width="51" stroke-dasharray="51,102" stroke-linejoin="round"/>
+<polyline points="-1650,0 -1230,0 -1230,600 -610,600 -610,1200 -1244,1496 -610,1200 -1410,1200 -1537,1472 -1207,765 -1207,-605 -607,-605 -607,-1205 -1242,-1501 -607,-1205 -1407,-1205 -1534,-1477 -1407,-1205 593,-1205 1100,-117 605,-612 -31,24 627,638 616,1238 1363,1524 1573,-1468" fill="none" stroke="#55ff55" stroke-width="51" stroke-dasharray="51,102" stroke-dashoffset="102" stroke-linejoin="round"/>
+<polyline points="-1650,0 -1230,0 -1230,600 -610,600 -610,1200 -1244,1496 -610,1200 -1410,1200 -1537,1472 -1207,765 -1207,-605 -607,-605 -607,-1205 -1242,-1501 -607,-1205 -1407,-1205 -1534,-1477 -1407,-1205 593,-1205 1100,-117 605,-612 -31,24 627,638 616,1238 1363,1524 1573,-1468" fill="none" stroke="#ffffff" stroke-width="51" stroke-dasharray="51,102" stroke-dashoffset="51" stroke-linejoin="round"/>
 <path d="M -1650,0 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
 <path d="M -1230,600 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
+<path d="M -610,600 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
+<path d="M -610,1200 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
+<path d="M -1207,765 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
+<path d="M -1207,-605 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
+<path d="M -607,-1205 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
+<path d="M -1407,-1205 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
+<path d="M 593,-1205 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
+<path d="M 1100,-117 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
+<path d="M 605,-612 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
+<path d="M 627,638 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
+<path d="M 616,1238 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
+<path d="M 1363,1524 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
 </g>
 </svg>
