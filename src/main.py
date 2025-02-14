@@ -3,6 +3,8 @@
 from telemetry.config_log import *
 from high_stakes.events import *
 
+GPS_QUALITY_THRESHOLD = 999
+
 # Open log based on config
 config_open_log()
 
@@ -51,7 +53,7 @@ def autonomous_function():
     reset_robot_position_and_heading_to_gps()
     trigger_mover.move(Position(-1244, 1496))
 
-    trigger_mover.move(Position(-610, 1200))
+    trigger_mover.move(Position(-610, 1200), REVERSE)
     reset_robot_position_and_heading_to_gps()
 
     trigger_mover.move(Position(-1410, 1200))
