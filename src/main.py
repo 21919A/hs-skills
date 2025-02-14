@@ -47,7 +47,7 @@ def autonomous_function():
 
     trigger_driver.drive(420)
     trigger_turner.turn(90, FRAME_HEADING_RELATIVE)
-    trigger_driver.drive(-600)
+    slow_trigger_driver.drive(-600)
     clamp.set(True)
 
     trigger_turner.turn(-90, FRAME_HEADING_RELATIVE)
