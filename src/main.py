@@ -34,9 +34,8 @@ def autonomous_function():
 
     intake.stop()
 
-    trigger_mover.move(Position(-1230, 0), FRAME_ABSOLUTE)
-    trigger_turner.turn(180, FRAME_ABSOLUTE)
-    slow_trigger_mover.move(Position(-1230, 600), FRAME_ABSOLUTE, REVERSE)
+    trigger_mover.move(Position(-1230, 0))
+    slow_trigger_mover.move(Position(-1230, 600), REVERSE)
 
     clamp.set(True)
 
@@ -44,20 +43,18 @@ def autonomous_function():
     reset_robot_position_and_heading_to_gps()
 
     intake.spin_forward()
-    trigger_mover.move(Position(-610, 600), FRAME_ABSOLUTE)
+    trigger_mover.move(Position(-610, 600))
 
-    trigger_turner.turn(0, FRAME_ABSOLUTE)
     reset_robot_position_and_heading_to_gps()
-    trigger_mover.move(Position(-610, 1200), FRAME_ABSOLUTE)
+    trigger_mover.move(Position(-610, 1200))
 
-    trigger_turner.turn(-65, FRAME_HEADING_RELATIVE)
     reset_robot_position_and_heading_to_gps()
-    trigger_driver.drive(700)
+    trigger_mover.move(Position(-1244, 1496))
 
-    trigger_driver.drive(-700)
+    trigger_mover.move(Position(-610, 1200))
     reset_robot_position_and_heading_to_gps()
-    trigger_turner.turn(-25, FRAME_HEADING_RELATIVE)
-    trigger_driver.drive(800)
+
+    trigger_mover.move(Position(-1410, 1200))
 
     trigger_turner.turn(-115, FRAME_HEADING_RELATIVE)
     trigger_driver.drive(-300)
