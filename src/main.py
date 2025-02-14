@@ -40,15 +40,15 @@ def autonomous_function():
 
     clamp.set(True)
 
-    trigger_turner.turn(-90, FRAME_HEADING_RELATIVE)
+    trigger_turner.turn(90, FRAME_ABSOLUTE)
     reset_robot_position_and_heading_to_gps()
 
     intake.spin_forward()
-    trigger_driver.drive(620)
+    trigger_mover.move(Position(-610, 600), FRAME_ABSOLUTE)
 
-    trigger_turner.turn(-90, FRAME_HEADING_RELATIVE)
+    trigger_turner.turn(0, FRAME_ABSOLUTE)
     reset_robot_position_and_heading_to_gps()
-    trigger_driver.drive(600)
+    trigger_mover.move(Position(-610, 1200), FRAME_ABSOLUTE)
 
     trigger_turner.turn(-65, FRAME_HEADING_RELATIVE)
     reset_robot_position_and_heading_to_gps()
