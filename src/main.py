@@ -36,22 +36,23 @@ def autonomous_function():
     inertial.set_heading(90)
 
     reset_robot_position_and_heading_to_gps()
-    intake_1st_stage.set_velocity(600, RPM)
-    intake_2nd_stage.set_velocity(600, RPM)
 
-    intake_1st_stage.spin(FORWARD)
-    intake_2nd_stage.spin(REVERSE)
+    intake.spin_forward()
 
     wait(1000, MSEC)
 
+    intake.stop()
 
     trigger_driver.drive(420)
     trigger_turner.turn(90, FRAME_HEADING_RELATIVE)
     slow_trigger_driver.drive(-600)
+
     clamp.set(True)
 
     trigger_turner.turn(-90, FRAME_HEADING_RELATIVE)
     reset_robot_position_and_heading_to_gps()
+
+    intake.spin_forward()
     trigger_driver.drive(620)
 
     trigger_turner.turn(-90, FRAME_HEADING_RELATIVE)
@@ -101,24 +102,22 @@ def autonomous_function():
     reset_robot_position_and_heading_to_gps()
     trigger_turner.turn(65, FRAME_HEADING_RELATIVE)
 
-    intake_1st_stage.stop()
-    intake_2nd_stage.stop()
+    intake.stop()
     trigger_driver.drive(2000)
 
-    intake_1st_stage.spin(REVERSE)
+    intake.spin_reverse()
     wait(100, MSEC)
-    intake_1st_stage.stop()
+    intake.stop()
 
     reset_robot_position_and_heading_to_gps()
     trigger_turner.turn(115, FRAME_HEADING_RELATIVE)
     trigger_driver.drive(-1200)
     clamp.set(True)
 
-    intake_1st_stage.spin(REVERSE)
-    intake_2nd_stage.spin(FORWARD)
-
     reset_robot_position_and_heading_to_gps()
     trigger_turner.turn(20, FRAME_HEADING_RELATIVE)
+
+    intake.spin_forward()
     trigger_driver.drive(700)
 
     reset_robot_position_and_heading_to_gps()
