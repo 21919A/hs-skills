@@ -14,15 +14,6 @@ def driver_function():
 
     # General event handling is initialized outside of this function by init_event_handling()
 
-    controller.buttonX.pressed(lambda: trigger_driver.drive(1000))
-    controller.buttonY.pressed(lambda: trigger_driver.drive(-1000))
-    controller.buttonLeft.pressed(
-        lambda: trigger_turner.turn(-90, FRAME_HEADING_RELATIVE)
-    )
-    controller.buttonRight.pressed(
-        lambda: trigger_turner.turn(90, FRAME_HEADING_RELATIVE)
-    )
-
     log(("Competition", "competition"), "driver_end")
 
 
@@ -43,9 +34,9 @@ def autonomous_function():
 
     intake.stop()
 
-    trigger_driver.drive(420)
-    trigger_turner.turn(90, FRAME_HEADING_RELATIVE)
-    slow_trigger_driver.drive(-600)
+    trigger_mover.move(Position(-1230, 0), FRAME_ABSOLUTE)
+    trigger_turner.turn(180, FRAME_ABSOLUTE)
+    slow_trigger_mover.move(Position(-1230, 600), FRAME_ABSOLUTE, REVERSE)
 
     clamp.set(True)
 
@@ -96,7 +87,7 @@ def autonomous_function():
 
     trigger_turner.turn(115, FRAME_HEADING_RELATIVE)
     trigger_driver.drive(-300)
-    clamp.set(False) 
+    clamp.set(False)
 
     trigger_driver.drive(300)
     reset_robot_position_and_heading_to_gps()
@@ -125,7 +116,7 @@ def autonomous_function():
     trigger_driver.drive(900)
     trigger_turner.turn(92, FRAME_HEADING_RELATIVE)
     trigger_driver.drive(900)
-    
+
     reset_robot_position_and_heading_to_gps()
     trigger_turner.turn(-48, FRAME_HEADING_RELATIVE)
     trigger_driver.drive(600)
