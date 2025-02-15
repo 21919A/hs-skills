@@ -86,12 +86,17 @@ def autonomous_function():
     trigger_mover.move(Position(-1400, -1200))
     intake.stop()
 
-    trigger_mover.move(Position(0, -1200))
-    # reset_robot_position_and_heading_to_gps(ENABLE_GPS)
+    # use this for extra ring
+    trigger_mover.move(Position(0, -1500))
+    intake.spin_forward()
+    wait(500, MSEC)
+    intake.stop()
+
+    # trigger_mover.move(Position(0, -1200)) # dont use for extra ring
     trigger_turner.turn(270, FRAME_ABSOLUTE)
     trigger_mover.move(Position(600, -1200))
     intake.spin_forward()
-    wait(500, MSEC)
+    wait(300, MSEC)
     intake.stop()
 
     trigger_mover.move(Position(1200, -350), REVERSE)
@@ -100,78 +105,15 @@ def autonomous_function():
 
     clamp.set(True)
 
-    # trigger_turner.turn(110, FRAME_HEADING_RELATIVE)
-    # slow_trigger_driver.drive(-1200)
-    reset_robot_position_and_heading_to_gps()
-    # slow_trigger_driver.drive(-300)
-    # trigger_mover.move(Position(1200, 0), REVERSE)
-
-    clamp.set(True)
-
     intake.spin_forward()
     trigger_mover.move(Position(600, -600))
 
-
-    # reset_robot_position_and_heading_to_gps()
-    # trigger_turner.turn(90, FRAME_HEADING_RELATIVE)
-    # trigger_driver.drive(600)
-
-    # trigger_turner.turn(90, FRAME_HEADING_RELATIVE)
-    # trigger_driver.drive(600)
-    # reset_robot_position_and_heading_to_gps()
-
-    # trigger_turner.turn(65, FRAME_HEADING_RELATIVE)
-    # trigger_driver.drive(700)
-    # trigger_driver.drive(-700)
-
-    # reset_robot_position_and_heading_to_gps()
-    # trigger_turner.turn(25, FRAME_HEADING_RELATIVE)
-    # trigger_driver.drive(800)
-
-    # trigger_turner.turn(115, FRAME_HEADING_RELATIVE)
-    # trigger_driver.drive(-300)
-    # clamp.set(False)
-
-    # trigger_driver.drive(300)
-    # reset_robot_position_and_heading_to_gps()
-    # trigger_turner.turn(65, FRAME_HEADING_RELATIVE)
-
-    # intake.stop()
-    # trigger_driver.drive(2000)
-
-    # intake.spin_reverse()
-    # wait(100, MSEC)
-    # intake.stop()
-
-    # reset_robot_position_and_heading_to_gps()
-    # trigger_turner.turn(115, FRAME_HEADING_RELATIVE)
-    # trigger_driver.drive(-1200)
-    # clamp.set(True)
-
-    # reset_robot_position_and_heading_to_gps()
-    # trigger_turner.turn(20, FRAME_HEADING_RELATIVE)
-
-    # intake.spin_forward()
-    # trigger_driver.drive(700)
-
-    # reset_robot_position_and_heading_to_gps()
-    # trigger_turner.turn(90, FRAME_HEADING_RELATIVE)
-    # trigger_driver.drive(900)
-    # trigger_turner.turn(92, FRAME_HEADING_RELATIVE)
-    # trigger_driver.drive(900)
-
-    # reset_robot_position_and_heading_to_gps()
-    # trigger_turner.turn(-48, FRAME_HEADING_RELATIVE)
-    # trigger_driver.drive(600)
-
-    # reset_robot_position_and_heading_to_gps()
-    # trigger_turner.turn(-110, FRAME_HEADING_RELATIVE)
-    # trigger_driver.drive(-800)
-    # clamp.set(False)
-
-    # reset_robot_position_and_heading_to_gps()
-    # trigger_turner.turn(-73, FRAME_HEADING_RELATIVE)
-    # trigger_driver.drive(3000)
+    # use this for blue goal shove
+    trigger_mover.move(Position(1400, -1400))
+    clamp.set(False)
+    trigger_turner.turn(180, FRAME_HEADING_RELATIVE)
+    trigger_turner.turn(48, FRAME_HEADING_RELATIVE)
+    trigger_driver.drive(2800)
 
     wait(1000, MSEC)
     reset_robot_position_and_heading_to_gps()
