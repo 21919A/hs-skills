@@ -87,13 +87,19 @@ def autonomous_function():
     intake.stop()
 
     # use this for extra ring
-    trigger_mover.move(Position(0, -1500))
+    trigger_mover.move(Position(0, -1450))
     intake.spin_forward()
     wait(500, MSEC)
     intake.stop()
 
     # trigger_mover.move(Position(0, -1200)) # dont use for extra ring
     trigger_turner.turn(270, FRAME_ABSOLUTE)
+
+    wait(500, MSEC)
+    reset_robot_position_and_heading_to_gps(ENABLE_GPS)
+    inertial.set_heading(270)
+
+
     trigger_mover.move(Position(600, -1200))
     intake.spin_forward()
     wait(300, MSEC)
