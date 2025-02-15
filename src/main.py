@@ -37,7 +37,7 @@ def autonomous_function():
     trigger_mover.move(Position(-1230, 0))
     slow_trigger_mover.move(Position(-1230, 600), REVERSE)
 
-    clamp.set(True)
+    wait_and_clamp()
 
     trigger_turner.turn(90, FRAME_ABSOLUTE)
     reset_robot_position_and_heading_to_gps()
@@ -57,17 +57,17 @@ def autonomous_function():
     trigger_mover.move(Position(-1410, 1200))
 
     trigger_mover.move(Position(-1500, 1350), REVERSE)
-    clamp.set(False)
+    unclamp()
 
     reset_robot_position_and_heading_to_gps()
     trigger_mover.move(Position(-1250, 600))
     trigger_turner.turn(0, FRAME_ABSOLUTE)
     reset_robot_position_and_heading_to_gps()
-    trigger_mover.move(Position(-1250, 0), REVERSE)
+    trigger_mover.move(Position(-1200, 0), REVERSE)
     reset_robot_position_and_heading_to_gps()
     trigger_turner.turn(0, FRAME_ABSOLUTE)
     slow_trigger_driver.drive(-650)
-    clamp.set(True)
+    wait_and_clamp()
 
     reset_robot_position_and_heading_to_gps()
 
@@ -82,7 +82,7 @@ def autonomous_function():
     reset_robot_position_and_heading_to_gps()
     trigger_mover.move(Position(-1400, -1200))
     trigger_mover.move(Position(-1500, -1450), REVERSE)
-    clamp.set(False)
+    unclamp()
     trigger_mover.move(Position(-1400, -1200))
     intake.stop()
 
@@ -109,15 +109,15 @@ def autonomous_function():
     trigger_turner.turn(180, FRAME_ABSOLUTE)
     slow_trigger_mover.move(Position(1200, 0), REVERSE)
 
-    clamp.set(True)
+    wait_and_clamp()
 
     intake.spin_forward()
     trigger_mover.move(Position(600, -600))
 
     # use this for blue goal shove
-    trigger_mover.move(Position(1400, -1400))
-    clamp.set(False)
-    trigger_turner.turn(180, FRAME_HEADING_RELATIVE)
+    trigger_mover.move(Position(1400, -1400), REVERSE)
+    unclamp()
+    # trigger_turner.turn(180, FRAME_HEADING_RELATIVE)
     trigger_turner.turn(48, FRAME_HEADING_RELATIVE)
     trigger_driver.drive(2800)
 
