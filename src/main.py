@@ -93,11 +93,11 @@ def autonomous_function():
     intake.stop()
 
     # trigger_mover.move(Position(0, -1200)) # dont use for extra ring
-    trigger_turner.turn(270, FRAME_ABSOLUTE)
+    trigger_turner.turn(90, FRAME_ABSOLUTE)
 
     wait(500, MSEC)
     reset_robot_position_and_heading_to_gps(ENABLE_GPS)
-    inertial.set_heading(270)
+    inertial.set_heading(90)
 
 
     trigger_mover.move(Position(600, -1200))
