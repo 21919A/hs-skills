@@ -78,53 +78,53 @@
 <path d="M -89,-1500 a 89 89 0 0 0 178 0 a 89 89 0 0 0 -178 0 z m 51 0 a 38 38 0 0 0 76 0 a 38 38 0 0 0 -76 0 z" fill="#cc5555" stroke="#000000" stroke-width="3" fill-rule="evenodd"/>
 <path d="M 1411,600 a 89 89 0 0 0 178 0 a 89 89 0 0 0 -178 0 z m 51 0 a 38 38 0 0 0 76 0 a 38 38 0 0 0 -76 0 z" fill="#5555cc" stroke="#000000" stroke-width="3" fill-rule="evenodd"/>
 <path d="M 1411,-600 a 89 89 0 0 0 178 0 a 89 89 0 0 0 -178 0 z m 51 0 a 38 38 0 0 0 76 0 a 38 38 0 0 0 -76 0 z" fill="#5555cc" stroke="#000000" stroke-width="3" fill-rule="evenodd"/>
-<rect x="-1650" y="0" width="25" height="25" fill="#ff0000">
-<animateTransform attributeName="transform" type="rotate" to="360 -1650 0" dur="3s" repeatCount="indefinite" from="0 -1650 0"/>
-</rect>
-<rect x="-1650" y="0" width="25" height="25" fill="#00ff00">
-<animateTransform attributeName="transform" type="rotate" to="360 -1650 0" dur="3s" repeatCount="indefinite" from="0 -1650 0"/>
-</rect>
+<line x1="-1688" y1="0" x2="-1613" y2="0" stroke="#ff0000" stroke-width="25" stroke-dasharray="25,25">
+<animateTransform attributeName="transform" type="rotate" to="360 -1650 0" dur="2000ms" repeatCount="indefinite" from="0 -1650 0"/>
+</line>
+<line x1="-1688" y1="0" x2="-1613" y2="0" stroke="#00ff00" stroke-width="25" stroke-dasharray="25,25">
+<animateTransform attributeName="transform" type="rotate" to="360 -1650 0" dur="2000ms" repeatCount="indefinite" from="0 -1650 0"/>
+</line>
 <polyline points="-1650,0 -1230,0 -1230,600" fill="none" stroke="#ff0000" stroke-width="25" stroke-dasharray="25,50" stroke-linejoin="round" stroke-dashoffset="0">
-<animate attributeName="stroke-dashoffset" values="75;0" dur="1s" repeatCount="indefinite"/>
+<animate attributeName="stroke-dashoffset" values="75;0" dur="1000ms" repeatCount="indefinite"/>
 </polyline>
-<rect x="-1230" y="600" width="75" height="25" fill="#ff0000">
-<animateTransform attributeName="transform" type="rotate" to="360 -1230 600" dur="3s" repeatCount="indefinite" from="0 -1230 600"/>
-</rect>
+<line x1="-1318" y1="600" x2="-1143" y2="600" stroke="#ff0000" stroke-width="25" stroke-dasharray="75,25">
+<animateTransform attributeName="transform" type="rotate" to="360 -1230 600" dur="2000ms" repeatCount="indefinite" from="0 -1230 600"/>
+</line>
 <polyline points="-1230,600 -720,600 -610,1200 -1230,1500 -610,1200 -1410,1200 -1500,1350" fill="none" stroke="#00ff00" stroke-width="75" stroke-dasharray="25,50" stroke-linejoin="round" stroke-dashoffset="0">
-<animate attributeName="stroke-dashoffset" values="75;0" dur="1s" repeatCount="indefinite"/>
+<animate attributeName="stroke-dashoffset" values="75;0" dur="1000ms" repeatCount="indefinite"/>
 </polyline>
 <polyline points="-1500,1350 -1250,600 -1200,0 -1200,-650" fill="none" stroke="#00ff00" stroke-width="25" stroke-dasharray="25,50" stroke-linejoin="round" stroke-dashoffset="0">
-<animate attributeName="stroke-dashoffset" values="75;0" dur="1s" repeatCount="indefinite"/>
+<animate attributeName="stroke-dashoffset" values="75;0" dur="1000ms" repeatCount="indefinite"/>
 </polyline>
 <polyline points="-1200,-650 -600,-600 -600,-1200 -1200,-1500 -600,-1200 -1400,-1200 -1500,-1450" fill="none" stroke="#00ff00" stroke-width="75" stroke-dasharray="25,50" stroke-linejoin="round" stroke-dashoffset="0">
-<animate attributeName="stroke-dashoffset" values="75;0" dur="1s" repeatCount="indefinite"/>
+<animate attributeName="stroke-dashoffset" values="75;0" dur="1000ms" repeatCount="indefinite"/>
 </polyline>
 <polyline points="-1500,-1450 -1400,-1200" fill="none" stroke="#00ff00" stroke-width="25" stroke-dasharray="25,50" stroke-linejoin="round" stroke-dashoffset="0">
-<animate attributeName="stroke-dashoffset" values="75;0" dur="1s" repeatCount="indefinite"/>
+<animate attributeName="stroke-dashoffset" values="75;0" dur="1000ms" repeatCount="indefinite"/>
 </polyline>
 <polyline points="-1400,-1200 0,-1450" fill="none" stroke="#ff0000" stroke-width="25" stroke-dasharray="25,50" stroke-linejoin="round" stroke-dashoffset="0">
-<animate attributeName="stroke-dashoffset" values="75;0" dur="1s" repeatCount="indefinite"/>
+<animate attributeName="stroke-dashoffset" values="75;0" dur="1000ms" repeatCount="indefinite"/>
 </polyline>
-<rect x="0" y="-1450" width="25" height="25" fill="#00ff00">
-<animateTransform attributeName="transform" type="rotate" to="360 0 -1450" dur="3s" repeatCount="indefinite" from="0 0 -1450"/>
-</rect>
+<line x1="-38" y1="-1450" x2="37" y2="-1450" stroke="#00ff00" stroke-width="25" stroke-dasharray="25,25">
+<animateTransform attributeName="transform" type="rotate" to="360 0 -1450" dur="2000ms" repeatCount="indefinite" from="0 0 -1450"/>
+</line>
 <polyline points="0,-1450 600,-1200" fill="none" stroke="#ff0000" stroke-width="25" stroke-dasharray="25,50" stroke-linejoin="round" stroke-dashoffset="0">
-<animate attributeName="stroke-dashoffset" values="75;0" dur="1s" repeatCount="indefinite"/>
+<animate attributeName="stroke-dashoffset" values="75;0" dur="1000ms" repeatCount="indefinite"/>
 </polyline>
-<rect x="600" y="-1200" width="25" height="25" fill="#00ff00">
-<animateTransform attributeName="transform" type="rotate" to="360 600 -1200" dur="3s" repeatCount="indefinite" from="0 600 -1200"/>
-</rect>
+<line x1="562" y1="-1200" x2="637" y2="-1200" stroke="#00ff00" stroke-width="25" stroke-dasharray="25,25">
+<animateTransform attributeName="transform" type="rotate" to="360 600 -1200" dur="2000ms" repeatCount="indefinite" from="0 600 -1200"/>
+</line>
 <polyline points="600,-1200 1200,-350 1200,0" fill="none" stroke="#ff0000" stroke-width="25" stroke-dasharray="25,50" stroke-linejoin="round" stroke-dashoffset="0">
-<animate attributeName="stroke-dashoffset" values="75;0" dur="1s" repeatCount="indefinite"/>
+<animate attributeName="stroke-dashoffset" values="75;0" dur="1000ms" repeatCount="indefinite"/>
 </polyline>
-<rect x="1200" y="0" width="75" height="25" fill="#ff0000">
-<animateTransform attributeName="transform" type="rotate" to="360 1200 0" dur="3s" repeatCount="indefinite" from="0 1200 0"/>
-</rect>
+<line x1="1112" y1="0" x2="1287" y2="0" stroke="#ff0000" stroke-width="25" stroke-dasharray="75,25">
+<animateTransform attributeName="transform" type="rotate" to="360 1200 0" dur="2000ms" repeatCount="indefinite" from="0 1200 0"/>
+</line>
 <polyline points="1200,0 600,-600 1400,-1400" fill="none" stroke="#00ff00" stroke-width="75" stroke-dasharray="25,50" stroke-linejoin="round" stroke-dashoffset="0">
-<animate attributeName="stroke-dashoffset" values="75;0" dur="1s" repeatCount="indefinite"/>
+<animate attributeName="stroke-dashoffset" values="75;0" dur="1000ms" repeatCount="indefinite"/>
 </polyline>
 <polyline points="1400,-1400 1547,1396" fill="none" stroke="#00ff00" stroke-width="25" stroke-dasharray="25,50" stroke-linejoin="round" stroke-dashoffset="0">
-<animate attributeName="stroke-dashoffset" values="75;0" dur="1s" repeatCount="indefinite"/>
+<animate attributeName="stroke-dashoffset" values="75;0" dur="1000ms" repeatCount="indefinite"/>
 </polyline>
 <path d="M -1650,0 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
 <path d="M -1230,600 l -77 133 a 89 89 0 1 0 154 0 z m -19 177 a 19 19 0 0 0 38 0 a 19 19 0 0 0 -38 0 z" fill="#ff0000" stroke="#ffffff" stroke-width="3" fill-rule="evenodd"/>
